@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+	<route url="/V1/orderitem" method="GET">
+		<service class="Chiran\OrderItem\Api\SalesOrderItemRepositoryInterface" method="getOrderItem"/>
+		<resources>
+			<resource ref="Chiran_OrderItem::orderitem" />
+		</resources>
+	</route>
+
+	<route url="/V1/orderitem/:id" method="GET">
+		<service class="Chiran\OrderItem\Api\SalesOrderItemRepositoryInterface" method="getOrderItemById"/>
+		<resources>
+			<resource ref="Chiran_OrderItem::orderitem"/>
+		</resources>
+	</route>
+
+</routes>

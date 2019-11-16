@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright © 2016 Magento. All rights reserved. * See COPYING.txt for license details.
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+	  <add id="Chiran_OrderItem::order" title="Orders" translate="title" module="Chiran_OrderItem" sortOrder="200" resource="Chiran_OrderItem::order"/>
+
+	  <add id="Chiran_OrderItem::orderitem" title="Order Items" translate="title" module="Chiran_OrderItem" parent="Chiran_OrderItem::order" sortOrder="200" action="order/item/index" resource="Chiran_OrderItem::orderitem"/>
+	</menu>
+</config>
